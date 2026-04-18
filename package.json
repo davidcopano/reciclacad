@@ -9,12 +9,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "prepare": "husky",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test:coverage": "vitest run --coverage"
   },
   "lint-staged": {
     "src/**/*.{ts,html,scss}": [
-      "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "private": true,
