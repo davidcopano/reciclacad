@@ -1,6 +1,6 @@
 {
   "chat.disableAIFeatures": true,
-  "conventionalCommits.scopes": ["styles", "app", "linting-formatting"],
+  "conventionalCommits.scopes": ["styles", "app", "linting-formatting", "config"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
