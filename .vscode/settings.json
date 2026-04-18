@@ -1,6 +1,7 @@
 {
   "chat.disableAIFeatures": true,
   "conventionalCommits.scopes": [
-    "styles"
+    "styles",
+    "app"
   ]
 }
