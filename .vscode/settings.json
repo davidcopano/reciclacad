@@ -1,7 +1,10 @@
 {
   "chat.disableAIFeatures": true,
-  "conventionalCommits.scopes": [
-    "styles",
-    "app"
-  ]
+  "conventionalCommits.scopes": ["styles", "app"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
