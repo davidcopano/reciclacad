@@ -14,8 +14,11 @@
     "test:coverage": "vitest run --coverage"
   },
   "lint-staged": {
-    "**/*.{ts,html,scss,js,json,md}": [
+    "**/*.{ts,html}": [
       "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.{scss,js,json,md}": [
       "prettier --write"
     ]
   },
