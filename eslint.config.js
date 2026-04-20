@@ -37,6 +37,7 @@ export default tseslint.config(
         'error',
         { type: 'attribute', prefix: 'app', style: 'camelCase' },
       ],
+      '@angular-eslint/no-uncalled-signals': 'error',
       '@angular-eslint/prefer-signals': 'error',
       '@angular-eslint/prefer-standalone': 'error',
       '@typescript-eslint/explicit-function-return-type': 'error',
