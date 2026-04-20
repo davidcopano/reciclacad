@@ -13,7 +13,6 @@ export default tseslint.config(
     plugins: {
       'unused-imports': unusedImports,
       'simple-import-sort': simpleImportSort,
-      sonarjs: sonarjs,
     },
     extends: [
       eslint.configs.recommended,
