@@ -7,13 +7,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky",
     "release": "standard-version",
     "test:coverage": "vitest run --coverage"
   },
   "lint-staged": {
-    "src/**/*.{ts,html,scss}": [
+    "**/*.{ts,html,scss,js,json,md}": [
       "eslint --fix",
       "prettier --write"
     ]
@@ -46,6 +47,9 @@
     "autoprefixer": "^10.5.0",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-simple-import-sort": "^13.0.0",
+    "eslint-plugin-sonarjs": "^4.0.3",
+    "eslint-plugin-unused-imports": "^4.4.1",
     "husky": "^9.1.7",
     "jsdom": "^28.0.0",
     "lint-staged": "^16.4.0",
