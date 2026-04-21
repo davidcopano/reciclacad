@@ -1,7 +1,11 @@
+/* assets and tokens */
 @import './assets/fonts.css';
 @import './assets/icons.css';
 @import './dark-mode.css';
 @import './theme.css';
+
+/* base */
+@import './base/loading.css';
 
 @import 'tailwindcss';
 
@@ -48,60 +52,6 @@ button:focus-visible {
 
 .btn-favorite:active {
   animation: favorite-pop 0.25s ease-out;
-}
-
-.loading-shell {
-  display: none;
-}
-
-.skeleton-block {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(187, 202, 188, 0.18);
-}
-
-.skeleton-block::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  transform: translateX(-100%);
-  background: linear-gradient(
-    90deg,
-    rgba(187, 202, 188, 0) 0%,
-    rgba(187, 202, 188, 0.32) 50%,
-    rgba(187, 202, 188, 0) 100%
-  );
-  animation: skeleton-shimmer 1.6s ease-in-out infinite;
-}
-
-@keyframes skeleton-shimmer {
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-body[data-loading='true'] .app-shell {
-  visibility: hidden;
-  pointer-events: none;
-  user-select: none;
-}
-
-body[data-loading='true'] .loading-shell {
-  display: block;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-
-  .skeleton-block::after {
-    content: none;
-  }
 }
 
 /* Floating detail card: type chips color mapping (light + dark) */
