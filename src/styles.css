@@ -79,6 +79,13 @@
   --font-ui: 'DM Sans Variable', sans-serif;
 }
 
+@layer base {
+  button,
+  [role='button'] {
+    cursor: pointer;
+  }
+}
+
 /* custom styles */
 
 .material-symbols-outlined {
