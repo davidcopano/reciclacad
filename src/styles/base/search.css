@@ -14,7 +14,6 @@
 }
 
 .dark .search-results-panel {
-  /* Más elevada en modo oscuro: fondo ligeramente más claro, mayor blur y sombra sutil */
   background: linear-gradient(180deg, rgba(46, 49, 50, 0.94), rgba(46, 49, 50, 0.86));
   color: #f0f1f2;
   backdrop-filter: blur(22px) saturate(120%);
