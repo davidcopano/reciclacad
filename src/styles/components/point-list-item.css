@@ -1,0 +1,12 @@
+.point-list-item[data-selected='true'] {
+  background: rgba(46, 204, 125, 0.14);
+}
+
+.point-list-item[data-selected='true'] .material-symbols-outlined {
+  opacity: 1;
+  color: #835500;
+}
+
+.point-list-item[data-selected='true']:hover {
+  background: rgba(46, 204, 125, 0.2);
+}
