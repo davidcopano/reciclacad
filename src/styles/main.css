@@ -16,10 +16,3 @@
 @import './components/toast.css';
 
 @import 'tailwindcss';
-
-body {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease;
-}
