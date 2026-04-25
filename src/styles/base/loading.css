@@ -51,3 +51,43 @@ body[data-loading='true'] .app-shell {
   pointer-events: none;
   user-select: none;
 }
+
+.search-skeleton-wrap {
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.search-skeleton {
+  position: relative;
+  height: 2.8rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: rgba(187, 202, 188, 0.18);
+}
+
+.search-skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(187, 202, 188, 0) 0%,
+    rgba(187, 202, 188, 0.32) 50%,
+    rgba(187, 202, 188, 0) 100%
+  );
+  animation: search-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes search-skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search-skeleton::after {
+    content: none;
+  }
+}
