@@ -80,3 +80,17 @@
     box-shadow: none !important;
   }
 }
+
+.search-empty,
+.search-error {
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.search-error {
+  margin: 0.4rem;
+  border-radius: 0.5rem;
+  color: #93000a;
+  background: rgba(255, 218, 214, 0.65);
+}
