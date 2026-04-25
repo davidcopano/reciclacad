@@ -10,8 +10,8 @@
 
 /* components */
 @import './components/filter-chips.css';
-@import './components/point-list-item.css';
-@import './components/point-marker.css';
+@import './components/point-list-items.css';
+@import './components/point-markers.css';
 @import './components/toast.css';
 
 @import 'tailwindcss';
