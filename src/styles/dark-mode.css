@@ -1,1 +1,14 @@
 @variant dark (&:where(.dark, .dark *));
+
+.dark [data-point-marker][data-selected='false'] .map-point-dot {
+  opacity: 0.72;
+}
+
+.dark .search-result-item:hover,
+.dark .search-result-item:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .point-list-item[data-selected='true'] {
+  background: rgba(110, 253, 169, 0.18);
+}
