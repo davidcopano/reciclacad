@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SideNavbarHeader } from '@shared/components/side-navbar-header/side-navbar-header';
 
 @Component({
   selector: 'app-favorites',
-  imports: [RouterLink],
+  imports: [RouterLink, SideNavbarHeader],
   templateUrl: './favorites.html',
   styleUrl: './favorites.css',
 })
