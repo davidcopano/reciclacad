@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SideNavbarFilterChips } from '@shared/components/side-navbar/side-navbar-filter-chips/side-navbar-filter-chips';
-import { SideNavbarHeader } from '@shared/components/side-navbar/side-navbar-header/side-navbar-header';
-import { SideNavbarPointList } from '@shared/components/side-navbar/side-navbar-point-list/side-navbar-point-list';
-import { SideNavbarSearchbar } from '@shared/components/side-navbar/side-navbar-searchbar/side-navbar-searchbar';
+import { SideNavbarFilterChips } from '@side-navbar/side-navbar-filter-chips/side-navbar-filter-chips';
+import { SideNavbarHeader } from '@side-navbar/side-navbar-header/side-navbar-header';
+import { SideNavbarPointList } from '@side-navbar/side-navbar-point-list/side-navbar-point-list';
+import { SideNavbarSearchbar } from '@side-navbar/side-navbar-searchbar/side-navbar-searchbar';
 
 @Component({
   selector: 'app-home',

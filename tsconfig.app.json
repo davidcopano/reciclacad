@@ -10,7 +10,8 @@
       "@environments/*": ["./src/environments/*"],
       "@core/*": ["./src/app/core/*"],
       "@features/*": ["./src/app/features/*"],
-      "@shared/*": ["./src/app/shared/*"]
+      "@shared/*": ["./src/app/shared/*"],
+      "@side-navbar/*": ["./src/app/shared/components/side-navbar/*"]
     }
   },
   "include": ["src/**/*.ts"],
