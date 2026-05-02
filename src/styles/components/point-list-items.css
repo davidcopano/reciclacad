@@ -1,3 +1,10 @@
+.point-list-item .bg-quaternary-container {
+  background: #97f0ff;
+}
+.point-list-item .bg-quinary-container {
+  background: #eedcff;
+}
+
 .point-list-item[data-selected='true'] {
   background: rgba(46, 204, 125, 0.14);
 }

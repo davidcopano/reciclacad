@@ -34,5 +34,17 @@ export class SideNavbarPointList {
       proximityMeters: 850,
       selected: false,
     },
+    {
+      type: 'batteries',
+      name: 'Calle Larga, 6',
+      proximityMeters: 860,
+      selected: false,
+    },
+    {
+      type: 'clothes',
+      name: 'Plaza Arenal',
+      proximityMeters: 865,
+      selected: false,
+    },
   ];
 }

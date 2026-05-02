@@ -16,5 +16,7 @@ export class SideNavbarPointListItem {
     'bg-primary-container': this.type() === 'glass',
     'bg-secondary-container': this.type() === 'paper',
     'bg-tertiary-container': this.type() === 'containers',
+    'bg-quaternary-container': this.type() === 'batteries',
+    'bg-quinary-container': this.type() === 'clothes',
   }));
 }
