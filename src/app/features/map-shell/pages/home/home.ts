@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SideNavbarFilterChips } from '@shared/components/side-navbar/side-navbar-filter-chips/side-navbar-filter-chips';
 import { SideNavbarHeader } from '@shared/components/side-navbar/side-navbar-header/side-navbar-header';
 import { SideNavbarSearchbar } from '@shared/components/side-navbar/side-navbar-searchbar/side-navbar-searchbar';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, SideNavbarHeader, SideNavbarSearchbar],
+  imports: [RouterLink, SideNavbarHeader, SideNavbarSearchbar, SideNavbarFilterChips],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
