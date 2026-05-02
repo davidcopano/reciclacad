@@ -1,0 +1,9 @@
+<button
+  aria-pressed="true"
+  data-filter-chip
+  [attr.data-filter-type]="type()"
+  class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
+>
+  <span class="material-symbols-outlined text-[16px]">{{ icon() }}</span>
+  {{ name() }}
+</button>

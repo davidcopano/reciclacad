@@ -1,52 +1,9 @@
 <div class="flex flex-wrap gap-2">
-  <!-- Vidrio (Primary) -->
-  <button
-    aria-pressed="true"
-    data-filter-chip
-    data-filter-type="vidrio"
-    class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
-  >
-    <span class="material-symbols-outlined text-[16px]">recycling</span>
-    Vidrio
-  </button>
-  <!-- Papel (Secondary) -->
-  <button
-    aria-pressed="true"
-    data-filter-chip
-    data-filter-type="papel"
-    class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
-  >
-    <span class="material-symbols-outlined text-[16px]">description</span>
-    Papel
-  </button>
-  <!-- Envases (Tertiary) -->
-  <button
-    aria-pressed="true"
-    data-filter-chip
-    data-filter-type="envases"
-    class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
-  >
-    <span class="material-symbols-outlined text-[16px]">inventory_2</span>
-    Envases
-  </button>
-  <!-- Pilas (Quaternary - teal) -->
-  <button
-    aria-pressed="true"
-    data-filter-chip
-    data-filter-type="pilas"
-    class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
-  >
-    <span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
-    Pilas
-  </button>
-  <!-- Ropa (Quinary - purple) -->
-  <button
-    aria-pressed="true"
-    data-filter-chip
-    data-filter-type="ropa"
-    class="ghost-border flex items-center gap-1.5 rounded-full border px-4 py-2 text-[12px] font-medium active:scale-[0.98]"
-  >
-    <span class="material-symbols-outlined text-[16px]">checkroom</span>
-    Ropa
-  </button>
+  @for (filterChip of filterChips; track filterChip.type) {
+    <side-navbar-filter-chip-item
+      [type]="filterChip.type"
+      [icon]="filterChip.icon"
+      [name]="filterChip.name"
+    />
+  }
 </div>
