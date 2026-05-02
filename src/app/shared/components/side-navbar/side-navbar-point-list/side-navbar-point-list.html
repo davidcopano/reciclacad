@@ -5,117 +5,13 @@
     {{ title() }}
   </div>
   <div class="space-y-1" data-points-list role="listbox" aria-label="Puntos de reciclaje">
-    <!-- Point Item 1 -->
-    <button
-      aria-label="Av. Ana de Viya, 12 — a 250 metros. Ver detalle"
-      class="hover:bg-surface-container-low group point-list-item flex w-full items-center justify-between rounded-lg p-3 text-left transition-colors dark:hover:bg-white/5"
-      data-point-item
-      data-point-id="p1"
-      data-selected="true"
-      aria-selected="true"
-      role="option"
-    >
-      <div class="flex items-center gap-3">
-        <div
-          aria-hidden="true"
-          class="bg-primary-container h-2.5 w-2.5 shrink-0 rounded-full"
-        ></div>
-        <div>
-          <div class="text-on-surface dark:text-inverse-on-surface text-[13px] font-medium">
-            Av. Ana de Viya, 12
-          </div>
-          <div class="text-outline dark:text-inverse-on-surface/60 text-[11px]">A 250m de ti</div>
-        </div>
-      </div>
-      <span
-        aria-hidden="true"
-        class="material-symbols-outlined text-outline-variant dark:text-inverse-on-surface/40 text-[18px] opacity-70 transition-opacity group-hover:opacity-100"
-        >favorite</span
-      >
-    </button>
-    <!-- Point Item 2 -->
-    <button
-      aria-label="Plaza de las Flores, 3 — a 400 metros. Ver detalle"
-      class="hover:bg-surface-container-low group point-list-item flex w-full items-center justify-between rounded-lg p-3 text-left transition-colors dark:hover:bg-white/5"
-      data-point-item
-      data-point-id="p2"
-      data-selected="false"
-      aria-selected="false"
-      role="option"
-    >
-      <div class="flex items-center gap-3">
-        <div
-          aria-hidden="true"
-          class="bg-secondary-container h-2.5 w-2.5 shrink-0 rounded-full"
-        ></div>
-        <div>
-          <div class="text-on-surface dark:text-inverse-on-surface text-[13px] font-medium">
-            Plaza de las Flores, 3
-          </div>
-          <div class="text-outline dark:text-inverse-on-surface/60 text-[11px]">A 400m de ti</div>
-        </div>
-      </div>
-      <span
-        aria-hidden="true"
-        class="material-symbols-outlined text-outline-variant dark:text-inverse-on-surface/40 text-[18px] opacity-70 transition-opacity group-hover:opacity-100"
-        >favorite</span
-      >
-    </button>
-    <!-- Point Item 3 -->
-    <button
-      aria-label="Calle Columela, 18 — a 600 metros. Ver detalle"
-      class="hover:bg-surface-container-low group point-list-item flex w-full items-center justify-between rounded-lg p-3 text-left transition-colors dark:hover:bg-white/5"
-      data-point-item
-      data-point-id="p3"
-      data-selected="false"
-      aria-selected="false"
-      role="option"
-    >
-      <div class="flex items-center gap-3">
-        <div
-          aria-hidden="true"
-          class="bg-tertiary-container h-2.5 w-2.5 shrink-0 rounded-full"
-        ></div>
-        <div>
-          <div class="text-on-surface dark:text-inverse-on-surface text-[13px] font-medium">
-            Calle Columela, 18
-          </div>
-          <div class="text-outline dark:text-inverse-on-surface/60 text-[11px]">A 600m de ti</div>
-        </div>
-      </div>
-      <span
-        aria-hidden="true"
-        class="material-symbols-outlined text-outline-variant dark:text-inverse-on-surface/40 text-[18px] opacity-70 transition-opacity group-hover:opacity-100"
-        >favorite</span
-      >
-    </button>
-    <!-- Point Item 4 -->
-    <button
-      aria-label="Paseo Marítimo, 45 — a 850 metros. Ver detalle"
-      class="hover:bg-surface-container-low group point-list-item flex w-full items-center justify-between rounded-lg p-3 text-left transition-colors dark:hover:bg-white/5"
-      data-point-item
-      data-point-id="p4"
-      data-selected="false"
-      aria-selected="false"
-      role="option"
-    >
-      <div class="flex items-center gap-3">
-        <div
-          aria-hidden="true"
-          class="bg-primary-container h-2.5 w-2.5 shrink-0 rounded-full"
-        ></div>
-        <div>
-          <div class="text-on-surface dark:text-inverse-on-surface text-[13px] font-medium">
-            Paseo Marítimo, 45
-          </div>
-          <div class="text-outline dark:text-inverse-on-surface/60 text-[11px]">A 850m de ti</div>
-        </div>
-      </div>
-      <span
-        aria-hidden="true"
-        class="material-symbols-outlined text-outline-variant dark:text-inverse-on-surface/40 text-[18px] opacity-70 transition-opacity group-hover:opacity-100"
-        >favorite</span
-      >
-    </button>
+    @for (item of items; track item.name) {
+      <side-navbar-point-list-item
+        [type]="item.type"
+        [name]="item.name"
+        [proximityMeters]="item.proximityMeters"
+        [selected]="item.selected"
+      />
+    }
   </div>
 </div>
