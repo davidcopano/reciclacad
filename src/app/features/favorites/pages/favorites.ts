@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SideNavbarHeader } from '@shared/components/side-navbar-header/side-navbar-header';
+import { SideNavbarHeader } from '@shared/components/side-navbar/side-navbar-header/side-navbar-header';
 
 @Component({
   selector: 'app-favorites',
